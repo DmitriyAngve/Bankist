@@ -66,10 +66,12 @@ const inputClosePin = document.querySelector('.form__input--pin');
 ////////////////////////////////////////////////////////////////////
 
 const displayMovements = function (movements) {
+  // fill empty entire html container
+  containerMovements.innerHTML = ''; // .innerHTML return everything, including the HTML (all HTML tags will be included)
   movements.forEach(function (mov, i) {
-    // fill empty entire html container
     const type = mov > 0 ? 'deposit' : 'withdrawal';
 
+    // Create a string
     const html = `  
     <div class="movements__row">
     <div class="movements__type movements__type--${type}">${
