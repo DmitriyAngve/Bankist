@@ -61,10 +61,6 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
-////////////////////////////////////////////////////////////////////
-/////////////////////PROJECT:"BANKIST" APP//////////////////////////
-////////////////////////////////////////////////////////////////////
-
 const displayMovements = function (movements, sort = false) {
   // fill empty entire html container
   containerMovements.innerHTML = ''; // .innerHTML return everything, including the HTML (all HTML tags will be included)
